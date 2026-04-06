@@ -1,0 +1,117 @@
+digraph 汽车材料知识 {
+    graph [fontname="Microsoft YaHei", fontsize=24, bgcolor="#f5f5f5", margin=0, nodesep=0.4, ranksep=0.8];
+    node [fontname="Microsoft YaHei", shape=box, style="rounded,filled", fillcolor="#e8e8e8", fontsize=11];
+    edge [fontname="Microsoft YaHei", color="#666666", fontsize=10];
+    
+    // 根节点
+    根 [label="🚗\n汽车材料知识", fillcolor="#4a90d9", fontcolor="white", fontsize=16, width=2, height=1.2];
+    
+    // 四大分支
+    塑料 [label="🔷 塑料材料\n(250-300kg/车)", fillcolor="#3498db", fontcolor="white", fontsize=13];
+    金属 [label="🔶 金属材料\n(车身结构)", fillcolor="#e67e22", fontcolor="white", fontsize=13];
+    其他 [label="🟢 其他材料\n(密封/涂料/玻璃)", fillcolor="#27ae60", fontcolor="white", fontsize=13];
+    工艺 [label="🔴 应用与工艺\n(选型/成型/处理)", fillcolor="#e74c3c", fontcolor="white", fontsize=13];
+    
+    根 -> 塑料;
+    根 -> 金属;
+    根 -> 其他;
+    根 -> 工艺;
+    
+    // 塑料材料子分支
+    通用塑料 [label="📦 通用塑料", fillcolor="#aed6f1"];
+    工程塑料 [label="⚙️ 工程塑料", fillcolor="#aed6f1"];
+    高性能塑料 [label="🚀 高性能塑料", fillcolor="#aed6f1"];
+    复合材料 [label="🧬 复合材料", fillcolor="#aed6f1"];
+    可回收 [label="♻️ 可回收材料", fillcolor="#aed6f1"];
+    
+    塑料 -> 通用塑料;
+    塑料 -> 工程塑料;
+    塑料 -> 高性能塑料;
+    塑料 -> 复合材料;
+    塑料 -> 可回收;
+    
+    // 通用塑料详情
+    PP [label="PP及其改性\n• 保险杠(PP+EPDM)\n• 仪表板(PP+滑石粉)\n• 结构件(LFT-PP)", fillcolor="#d6eaf8", fontsize=10];
+    ABS [label="ABS/PC/PMMA\n• 仪表板面板\n• 车灯壳体\n• 导光条", fillcolor="#d6eaf8", fontsize=10];
+    通用塑料 -> PP;
+    通用塑料 -> ABS;
+    
+    // 工程塑料详情
+    PA [label="聚酰胺PA\n• PA6齿轮\n• PA66连接器\n• PA46耐高温件", fillcolor="#d6eaf8", fontsize=10];
+    PBT [label="PBT/PET/POM\n• 连接器\n• 齿轮/门锁", fillcolor="#d6eaf8", fontsize=10];
+    工程塑料 -> PA;
+    工程塑料 -> PBT;
+    
+    // 高性能塑料详情
+    PPS [label="PPS/PEEK\n• 涡轮增压管路\n• 轴承/密封件", fillcolor="#d6eaf8", fontsize=10];
+    高温尼龙 [label="PPA/LCP\n• 发动机周边\n• 精密连接器", fillcolor="#d6eaf8", fontsize=10];
+    高性能塑料 -> PPS;
+    高性能塑料 -> 高温尼龙;
+    
+    // 复合材料详情
+    LFT [label="LFT/CFRTP\n• 前端模块\n• 碳纤维外观件", fillcolor="#d6eaf8", fontsize=10];
+    GMT [label="GMT玻纤毡\n• 底护板\n• 座椅骨架", fillcolor="#d6eaf8", fontsize=10];
+    复合材料 -> LFT;
+    复合材料 -> GMT;
+    
+    // 金属材料子分支
+    高强度钢 [label="⚙️ 高强度钢", fillcolor="#f5cba7"];
+    铝合金 [label="🔧 铝合金", fillcolor="#f5cba7"];
+    镁合金 [label="⚡ 镁合金", fillcolor="#f5cba7"];
+    有色金属 [label="💎 其他有色金属", fillcolor="#f5cba7"];
+    
+    金属 -> 高强度钢;
+    金属 -> 铝合金;
+    金属 -> 镁合金;
+    金属 -> 有色金属;
+    
+    // 高强度钢详情
+    AHSS [label="先进高强钢AHSS\n• 双相钢DP\n• TRIP钢\n• 复相钢CP", fillcolor="#fadbd8", fontsize=10];
+    PHSS [label="热成形钢PHSS\n• 门环\n• A/B柱加强板\n• 1500MPa级", fillcolor="#fadbd8", fontsize=10];
+    第三代 [label="第三代钢\n• 中锰钢\n• Q&P钢", fillcolor="#fadbd8", fontsize=10];
+    高强度钢 -> AHSS;
+    高强度钢 -> PHSS;
+    高强度钢 -> 第三代;
+    
+    // 铝合金详情
+    铸造铝 [label="铸造铝合金\n• 缸体缸盖(A356)\n• 变速箱壳体(A380)", fillcolor="#fadbd8", fontsize=10];
+    变形铝 [label="变形铝合金\n• 车身板(6016/6022)\n• 结构件(6061/6082)", fillcolor="#fadbd8", fontsize=10];
+    铝连接 [label="连接技术\n• SPR自冲铆接\n• FDS流钻螺钉\n• 激光焊接", fillcolor="#fadbd8", fontsize=10];
+    铝合金 -> 铸造铝;
+    铝合金 -> 变形铝;
+    铝合金 -> 铝连接;
+    
+    // 镁合金详情
+    镁合金牌号 [label="镁合金牌号\n• AZ91D(高强度)\n• AM60B(高延展)\n• AE44(耐热)", fillcolor="#fadbd8", fontsize=10];
+    镁应用 [label="典型应用\n• 变速箱壳体\n• 座椅框架\n• 仪表板横梁", fillcolor="#fadbd8", fontsize=10];
+    镁合金 -> 镁合金牌号;
+    镁合金 -> 镁应用;
+    
+    // 有色金属详情
+    铜 [label="铜及铜合金\n• 线束导体\n• 散热器\n• 轴承衬套", fillcolor="#fadbd8", fontsize=10];
+    钛 [label="钛合金\n• 排气管\n• 连杆/紧固件", fillcolor="#fadbd8", fontsize=10];
+    锌镍 [label="锌/镍合金\n• 镀锌钢板\n• 火花塞/氧传感器", fillcolor="#fadbd8", fontsize=10];
+    有色金属 -> 铜;
+    有色金属 -> 钛;
+    有色金属 -> 锌镍;
+    
+    // 其他材料子分支
+    橡胶 [label="🔘 橡胶弹性体", fillcolor="#a9dfbf"];
+    涂料 [label="🎨 涂料涂层", fillcolor="#a9dfbf"];
+    胶粘剂 [label="🧪 胶粘密封", fillcolor="#a9dfbf"];
+    玻璃 [label="🔍 玻璃陶瓷", fillcolor="#a9dfbf"];
+    
+    其他 -> 橡胶;
+    其他 -> 涂料;
+    其他 -> 胶粘剂;
+    其他 -> 玻璃;
+    
+    // 应用与工艺子分支
+    选型 [label="📋 材料选型指南\n• 性能匹配\n• 成本分析\n• 供应链评估", fillcolor="#f5b7b1", fontsize=10];
+    成型 [label="🏭 成型工艺\n• 注塑/压铸\n• 冲压/锻造", fillcolor="#f5b7b1", fontsize=10];
+    表面处理 [label="✨ 表面处理\n• 涂装/电镀\n• 阳极氧化", fillcolor="#f5b7b1", fontsize=10];
+    
+    工艺 -> 选型;
+    工艺 -> 成型;
+    工艺 -> 表面处理;
+}

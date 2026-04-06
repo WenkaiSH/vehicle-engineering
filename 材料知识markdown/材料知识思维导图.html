@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汽车材料知识思维导图</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .legend h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        .legend-item {
+            display: inline-block;
+            margin: 5px 15px 5px 0;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .plastic { background: #e3f2fd; color: #1565c0; }
+        .metal { background: #fff3e0; color: #e65100; }
+        .other { background: #e8f5e9; color: #2e7d32; }
+        .process { background: #fce4ec; color: #c2185b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 汽车材料知识体系</h1>
+        <div class="subtitle">Auto Material Knowledge Map</div>
+        
+        <div class="mermaid">
+mindmap
+  root((汽车材料知识))
+    塑料材料🟦
+      通用塑料
+        聚丙烯PP
+          PP+EPDM保险杠
+          PP+滑石粉仪表板
+          LFT-PP结构件
+        ABS及其合金
+          仪表板面板
+          电镀装饰件
+        聚碳酸酯PC
+          车灯壳体
+          透明件
+        PMMA
+          尾灯壳体
+          导光条
+      工程塑料
+        聚酰胺PA
+          PA6齿轮
+          PA66连接器
+          PA46耐高温件
+        PBT/PET
+          连接器
+          灯座
+        POM
+          齿轮
+          门锁机构
+        PC/ABS合金
+          仪表板骨架
+          空调出风口
+      高性能塑料
+        PPS
+          涡轮增压管路
+          电气部件
+        PEEK
+          轴承
+          密封件
+        高温尼龙PPA
+          发动机周边
+        LCP
+          精密连接器
+      复合材料
+        LFT长纤维增强
+          前端模块
+          底护板
+        CFRTP碳纤维
+          外观件
+          结构加强
+        GMT玻纤毡
+          底护板
+          座椅骨架
+      可回收材料
+        物理回收
+        化学回收
+        生物基材料
+    金属材料🟧
+      高强度钢
+        先进高强度钢AHSS
+          双相钢DP
+          TRIP钢
+          复相钢CP
+        热成形钢PHSS
+          门环
+          A/B柱加强板
+          超高强度应用
+        第三代钢
+          中锰钢
+          Q&P钢
+      铝合金
+        铸造铝合金
+          缸体缸盖A356
+          变速箱壳体A380
+          底盘件Silafont
+        变形铝合金
+          车身板6016/6022
+          结构件6061/6082
+          挤压型材
+        连接技术
+          自冲铆接SPR
+          流钻螺钉FDS
+          激光焊接
+      镁合金
+        压铸镁合金
+          AZ91D高强度
+          AM60B高延展
+          AE44耐热
+        应用部位
+          变速箱壳体
+          座椅框架
+          仪表板横梁
+          方向盘骨架
+      其他有色金属
+        铜及铜合金
+          线束导体
+          散热器
+          轴承衬套
+        钛合金
+          排气管
+          连杆
+          紧固件
+        锌合金
+          镀锌钢板
+          压铸小件
+        镍合金
+          火花塞
+          氧传感器
+          涡轮叶片
+    其他材料🟩
+      橡胶与弹性体
+        轮胎橡胶
+        密封条EPDM
+        减震橡胶
+      涂料与涂层
+        车身涂料
+        防腐涂层
+        功能性涂层
+      胶粘剂与密封材料
+        结构胶
+        密封胶
+        焊缝密封
+      玻璃与陶瓷
+        安全玻璃
+        陶瓷催化剂载体
+    应用与工艺🟥
+      材料选型指南
+        性能匹配
+        成本分析
+        供应链评估
+      成型工艺
+        注塑工艺
+        压铸工艺
+        冲压工艺
+        锻造工艺
+      表面处理
+        涂装
+        电镀
+        阳极氧化
+        化学转化膜
+        </div>
+        
+        <div class="legend">
+            <h3>图例说明</h3>
+            <span class="legend-item plastic">🟦 塑料材料 - 用量最大，约250-300kg/车</span>
+            <span class="legend-item metal">🟧 金属材料 - 车身结构核心</span>
+            <span class="legend-item other">🟩 其他材料 - 密封、涂料、玻璃等</span>
+            <span class="legend-item process">🟥 应用与工艺 - 选型、成型、表面处理</span>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            mindmap: {
+                padding: 16
+            }
+        });
+    </script>
+</body>
+</html>
